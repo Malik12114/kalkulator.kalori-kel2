@@ -33,7 +33,7 @@ with st.form("form_kalkulator"):
     submit = st.form_submit_button("Hitung")
 
 # Fungsi untuk menghitung BMR
- hitung_bmr(berat, tinggi, usia, jenis_kelamin):
+ def hitung_bmr(berat, tinggi, usia, jenis_kelamin):
     if jenis_kelamin == "Pria":
         return (10 * berat) + (6.25 * tinggi) - (5 * usia) + 5
     else:
